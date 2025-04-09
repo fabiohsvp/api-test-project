@@ -1,0 +1,115 @@
+body {
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  border-radius: 10px 10px 0 0 !important;
+  padding: 15px;
+}
+
+.btn {
+  padding: 10px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#resultados {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.result-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 5px solid #007bff;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.result-success {
+  border-left-color: #28a745;
+}
+
+.result-error {
+  border-left-color: #dc3545;
+}
+
+.result-item h5 {
+  margin-top: 0;
+  color: #343a40;
+}
+
+.result-item pre {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+/* Estilos para os modos de visualização */
+.mode-indicator {
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-left: 15px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.monitor-mode {
+  background-color: #6c757d;
+  color: white;
+}
+
+.client-mode {
+  background-color: #17a2b8;
+  color: white;
+}
+
+/* Estilos específicos para o corpo no modo monitor */
+body.monitor-mode .result-item {
+  border-left-width: 8px;
+}
+
+body.monitor-mode .result-success {
+  background-color: #e8f5e9;
+}
+
+body.monitor-mode .result-error {
+  background-color: #ffebee;
+}
+
+body.monitor-mode pre {
+  max-height: none;
+  font-size: 0.9rem;
+}
+
+/* Estilos para o botão de alternância de modo */
+.btn-outline-secondary {
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: white;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "api-test-plan",
+  "version": "1.0.0",
+  "description": "Plano de Testes de API",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/server/server.ts",
+    "build": "tsc",
+    "build:client": "tsc -p tsconfig.client.json",
+    "dev": "nodemon --exec ts-node src/server/server.ts",
+    "dev:full": "npm run build:client && npm run dev",
+    "monitor": "cross-env USER_MODE=monitor npm run dev:full"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.4.5",
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
